@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://bhsbfpiq33dkv"]
+
+[ext_resource type="Script" uid="uid://ejjn6l7dlwjv" path="res://Script/coffee_item.gd" id="1_8evog"]
+[ext_resource type="Texture2D" uid="uid://dou7a3hcw027l" path="res://Art/rotatingCoffeeBean-Sheet.png" id="1_466p8"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8evog"]
+radius = 23.0
+height = 46.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfs2h"]
+atlas = ExtResource("1_466p8")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pokgt"]
+atlas = ExtResource("1_466p8")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehimv"]
+atlas = ExtResource("1_466p8")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mgtry"]
+atlas = ExtResource("1_466p8")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jhnm6"]
+atlas = ExtResource("1_466p8")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ufjmr"]
+atlas = ExtResource("1_466p8")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gwish"]
+atlas = ExtResource("1_466p8")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5gud"]
+atlas = ExtResource("1_466p8")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7h1av"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cfs2h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pokgt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehimv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mgtry")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jhnm6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ufjmr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gwish")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5gud")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Coffee Item" type="Area2D" unique_id=1626684519 groups=["coin"]]
+script = ExtResource("1_8evog")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1534155171]
+position = Vector2(101, 43)
+shape = SubResource("CapsuleShape2D_8evog")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=617046046]
+position = Vector2(100, 43.000008)
+scale = Vector2(2.127, 3)
+sprite_frames = SubResource("SpriteFrames_7h1av")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

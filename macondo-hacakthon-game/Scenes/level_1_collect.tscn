@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dq1njnwiooxdx"]
+
+[ext_resource type="PackedScene" uid="uid://bv8ah5gsl374i" path="res://Scenes/player.tscn" id="2_5le7a"]
+[ext_resource type="PackedScene" uid="uid://de6hl5wvejkoh" path="res://Scenes/Background.tscn" id="3_5le7a"]
+[ext_resource type="PackedScene" uid="uid://bhsbfpiq33dkv" path="res://Scenes/coffee_item.tscn" id="3_taj5p"]
+
+[node name="Level 1 Collect" type="Node2D" unique_id=1607224641]
+
+[node name="Player" parent="." unique_id=1624666980 instance=ExtResource("2_5le7a")]
+position = Vector2(51, 55)
+
+[node name="TileMap" parent="." unique_id=656518706 instance=ExtResource("3_5le7a")]
+
+[node name="Coffee Item" parent="." unique_id=1626684519 instance=ExtResource("3_taj5p")]
+position = Vector2(1849, 1236)
