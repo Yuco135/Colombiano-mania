@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Colombiano Mania!"
-run/main_scene="uid://cqu5sr2qit62r"
+run/main_scene="uid://dngakdvora115"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

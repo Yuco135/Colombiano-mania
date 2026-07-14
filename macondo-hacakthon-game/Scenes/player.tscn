@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bv8ah5gsl374i"]
 
 [ext_resource type="Script" uid="uid://cgc1l6jwfa4bo" path="res://Script/player.gd" id="1_6t5aa"]
-[ext_resource type="Texture2D" uid="uid://bybvoss6qo123" path="res://Art/16x16 Idle-Sheet.png" id="2_6t5aa"]
-[ext_resource type="Texture2D" uid="uid://7vm6qkh0j8un" path="res://Art/16x16 Run-Sheet.png" id="3_vgqql"]
+[ext_resource type="Texture2D" uid="uid://bybvoss6qo123" path="res://Art/Player/16x16 Idle-Sheet.png" id="2_6t5aa"]
+[ext_resource type="Texture2D" uid="uid://7vm6qkh0j8un" path="res://Art/Player/16x16 Run-Sheet.png" id="3_vgqql"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fkybt"]
 atlas = ExtResource("2_6t5aa")
@@ -251,7 +251,8 @@ animations = [{
 size = Vector2(20, 22)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6t5aa"]
-radius = 15.0
+radius = 13.800018
+height = 30.799988
 
 [node name="Player" type="CharacterBody2D" unique_id=1624666980]
 position = Vector2(-342, -75)
@@ -267,16 +268,16 @@ frame = 2
 frame_progress = 0.9301857
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1244081042]
-position = Vector2(418, 246)
+position = Vector2(418.4, 245.59999)
 shape = SubResource("RectangleShape2D_vgqql")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=452549077]
-position = Vector2(427, 248)
+position = Vector2(418, 244)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=112077823]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=91041725]
-position = Vector2(418, 246)
+position = Vector2(418.4, 245.59999)
 shape = SubResource("CapsuleShape2D_6t5aa")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
