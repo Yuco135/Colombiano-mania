@@ -9,8 +9,8 @@ script = ExtResource("1_28flt")
 [node name="button_manager" type="Control" parent="." unique_id=1043514810]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 30.0
+offset_bottom = 27.0
 
 [node name="Start" type="Button" parent="button_manager" unique_id=169749945]
 layout_mode = 0
