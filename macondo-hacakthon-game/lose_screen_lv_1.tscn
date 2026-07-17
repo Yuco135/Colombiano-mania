@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://bf08h3ydyqs3v"]
+
+[ext_resource type="Script" uid="uid://bs5ynkpxxejwt" path="res://lose_screen_lv_1.gd" id="1_r5v4n"]
+
+[node name="lose_screen_lv1" type="Control" unique_id=1199872418]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r5v4n")
+
+[node name="Label" type="Label" parent="." unique_id=484561592]
+layout_mode = 0
+offset_left = 503.0
+offset_top = 201.0
+offset_right = 656.0
+offset_bottom = 243.0
+theme_override_font_sizes/font_size = 30
+text = "You lose L "
+
+[node name="Retry" type="Button" parent="." unique_id=1580587248]
+layout_mode = 0
+offset_left = 535.0
+offset_top = 261.0
+offset_right = 607.0
+offset_bottom = 304.0
+theme_override_font_sizes/font_size = 25
+text = "Retry"
+
+[node name="Quit" type="Button" parent="." unique_id=1817010908]
+layout_mode = 0
+offset_left = 546.0
+offset_top = 322.0
+offset_right = 611.0
+offset_bottom = 365.0
+theme_override_font_sizes/font_size = 25
+text = "Quit
+"
+
+[connection signal="pressed" from="Retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

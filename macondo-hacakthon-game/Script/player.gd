@@ -5,9 +5,7 @@ const SPEED = 300
 
 var last_direction: Vector2 = Vector2.DOWN
 
-var coin_counter = 0
 
-@onready var coin_label = %Label
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
@@ -48,13 +46,3 @@ func play_animation(prefix: String, dir: Vector2)  -> void:
 	elif dir.y > 0:
 		animated_sprite_2d.play(prefix + "_down")
 		
-func _on_area_2d_area_entered(area: Area2D) -> void:
-	if area.is_in_group("coin"):
-		set_coin(coin_counter + 1)
-		print (coin_counter)
-			
-		
-
-func set_coin(new_coin_count: int) -> void: 
-	coin_counter = new_coin_count
-	coin_label.text = "Coin Count: " + str(coin_counter)
