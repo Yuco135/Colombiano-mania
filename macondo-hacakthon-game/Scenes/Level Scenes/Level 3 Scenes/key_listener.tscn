@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://clikiuiksavew"]
+
+[ext_resource type="Texture2D" uid="uid://bw7hlqr4pgyy2" path="res://Art/Art for Levels/arrows.webp" id="1_2k37l"]
+[ext_resource type="Script" uid="uid://dv2cenkjuiedn" path="res://Script/Level Scripts/Level 3 Scripts/key_listener.gd" id="2_353mh"]
+
+[node name="KeyListener" type="Sprite2D" unique_id=804259909]
+texture = ExtResource("1_2k37l")
+hframes = 4
+vframes = 3
+script = ExtResource("2_353mh")
+
+[node name="RandomSpawmTimer" type="Timer" parent="." unique_id=1930844498]
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="RandomSpawmTimer" to="." method="_on_random_spawm_timer_timeout"]

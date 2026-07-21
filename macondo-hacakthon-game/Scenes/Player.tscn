@@ -248,11 +248,11 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vgqql"]
-size = Vector2(20, 22)
+size = Vector2(6.600006, 7.8000007)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6t5aa"]
-radius = 13.800018
-height = 30.799988
+radius = 3.4000015
+height = 8.799995
 
 [node name="Player" type="CharacterBody2D" unique_id=1624666980]
 position = Vector2(476.99994, 301.99997)
@@ -260,25 +260,27 @@ scale = Vector2(5, 5)
 script = ExtResource("1_6t5aa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1104381525]
-position = Vector2(1.21593475e-05, 7.390976e-06)
+position = Vector2(1.4215708e-05, 7.3313713e-06)
+scale = Vector2(0.431, 0.4)
 sprite_frames = SubResource("SpriteFrames_0gysh")
-animation = &"running_down"
+animation = &"running_up"
 autoplay = "idle_down"
-frame = 2
-frame_progress = 0.9301857
+frame_progress = 0.49886015
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1244081042]
-position = Vector2(1.3738871e-05, 3.8146973e-06)
+position = Vector2(0.20001984, 1.1000061)
+scale = Vector2(0.99999976, 0.99999976)
 shape = SubResource("RectangleShape2D_vgqql")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=452549077]
 position = Vector2(1.2397766e-05, 6.0796738e-06)
+zoom = Vector2(2.25, 2.25)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=112077823]
 position = Vector2(1.21593475e-05, 4.2915344e-06)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=91041725]
-position = Vector2(0, -2.682209e-06)
+position = Vector2(0.19999999, 1.1999973)
 shape = SubResource("CapsuleShape2D_6t5aa")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

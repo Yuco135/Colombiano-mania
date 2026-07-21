@@ -26,7 +26,7 @@ offset_left = 412.0
 offset_top = 287.0
 offset_right = 728.0
 offset_bottom = 394.0
-text = "Level 1"
+text = "Levels"
 
 [node name="Quit" type="Button" parent="button_manager" unique_id=1545138361]
 layout_mode = 0

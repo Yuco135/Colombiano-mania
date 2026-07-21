@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://c5q1q2hin0v2"]
+
+[ext_resource type="PackedScene" uid="uid://clikiuiksavew" path="res://Scenes/Level Scenes/Level 3 Scenes/key_listener.tscn" id="1_nh37l"]
+[ext_resource type="PackedScene" uid="uid://dnjjxhq8h0erf" path="res://Scenes/Level Scenes/Level 3 Scenes/level_3ui.tscn" id="2_8qes0"]
+
+[node name="Level 3 Dance" type="Node2D" unique_id=999734280]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1116932174]
+
+[node name="KeyListener" parent="." unique_id=804259909 instance=ExtResource("1_nh37l")]
+position = Vector2(-105, 274)
+key_name = "button_Q"
+
+[node name="KeyListener2" parent="." unique_id=1653781680 instance=ExtResource("1_nh37l")]
+position = Vector2(-35, 275)
+frame = 1
+key_name = "button_W"
+
+[node name="KeyListener3" parent="." unique_id=1453832438 instance=ExtResource("1_nh37l")]
+position = Vector2(35, 275)
+frame = 2
+key_name = "button_E"
+
+[node name="KeyListener4" parent="." unique_id=1985280675 instance=ExtResource("1_nh37l")]
+position = Vector2(105, 275)
+frame = 3
+key_name = "button_R"
+
+[node name="Level3UI" parent="." unique_id=1503815997 instance=ExtResource("2_8qes0")]
+offset_left = 105.0
+offset_top = 275.0
+offset_right = 105.0
+offset_bottom = 275.0

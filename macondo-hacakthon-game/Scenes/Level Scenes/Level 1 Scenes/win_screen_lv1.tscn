@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://cej7uibfur2k5"]
+
+[ext_resource type="Script" uid="uid://chjfi6vn4u0a1" path="res://Script/Level Scripts/Level 1 Scripts/win_screen_lv1.gd" id="1_5bn08"]
+[ext_resource type="Texture2D" uid="uid://d10rfcpvu6x80" path="res://Art/Art for Levels/colombia flag with coffee cup.jpg" id="2_q10qq"]
+
+[node name="Win_Screen" type="Control" unique_id=2078742509]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = 5.0
+offset_right = -3.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5bn08")
+
+[node name="Label" type="Label" parent="." unique_id=1668022352]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -278.0
+offset_top = -108.5
+offset_right = 278.0
+offset_bottom = -21.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "You Got All The Coffee Beans Good Job
+"
+
+[node name="Return_to_world" type="Button" parent="." unique_id=1716156067]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -101.0
+offset_top = -48.5
+offset_right = 101.0
+offset_bottom = -5.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Return to World"
+
+[node name="Retry" type="Button" parent="." unique_id=1731456136]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -36.0
+offset_top = -1.5
+offset_right = 36.0
+offset_bottom = 41.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Retry
+"
+
+[node name="Quit" type="Button" parent="." unique_id=1650477572]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -30.0
+offset_top = 49.5
+offset_right = 30.0
+offset_bottom = 92.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Quit"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1054056163]
+z_index = -1
+position = Vector2(579, 319)
+scale = Vector2(1.882353, 1.6)
+texture = ExtResource("2_q10qq")
+
+[connection signal="pressed" from="Return_to_world" to="." method="_on_return_to_world_pressed"]
+[connection signal="pressed" from="Retry" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

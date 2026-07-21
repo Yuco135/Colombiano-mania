@@ -6,7 +6,6 @@ const SPEED = 300
 var last_direction: Vector2 = Vector2.DOWN
 
 
-
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
 
@@ -27,8 +26,6 @@ func process_movement() -> void:
 	else:
 		velocity = Vector2.ZERO
 	
-
-
 
 func process_animation() -> void:
 	if velocity != Vector2.ZERO:

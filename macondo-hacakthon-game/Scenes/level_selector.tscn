@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://ba4urkpbby0cw"]
+
+[ext_resource type="Script" uid="uid://cioxxbltpi3cg" path="res://Script/level_selector.gd" id="1_22lal"]
+
+[node name="Node2D" type="Node2D" unique_id=864744743]
+script = ExtResource("1_22lal")
+
+[node name="level_buttons" type="Control" parent="." unique_id=1563802763]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="level1" type="Button" parent="level_buttons" unique_id=397110933]
+layout_mode = 0
+offset_left = 490.0
+offset_top = 232.0
+offset_right = 610.0
+offset_bottom = 263.0
+text = "Level 1: Coffee"
+
+[node name="level2" type="Button" parent="level_buttons" unique_id=1558831836]
+layout_mode = 0
+offset_left = 484.0
+offset_top = 280.0
+offset_right = 617.0
+offset_bottom = 311.0
+text = "Level 2: Football"
+
+[node name="level3" type="Button" parent="level_buttons" unique_id=753827687]
+layout_mode = 0
+offset_left = 491.0
+offset_top = 328.0
+offset_right = 610.0
+offset_bottom = 359.0
+text = "Level 3: Dance"
+
+[node name="Back" type="Button" parent="level_buttons" unique_id=2058281464]
+layout_mode = 0
+offset_left = 493.0
+offset_top = 379.0
+offset_right = 607.0
+offset_bottom = 410.0
+text = "Back to Menu
+"
+
+[connection signal="pressed" from="level_buttons/level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="level_buttons/level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="level_buttons/level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="level_buttons/Back" to="." method="_on_back_pressed"]
