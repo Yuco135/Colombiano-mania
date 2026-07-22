@@ -6,6 +6,7 @@
 [node name="Level 3 Dance" type="Node2D" unique_id=999734280]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1116932174]
+zoom = Vector2(2, 2)
 
 [node name="KeyListener" parent="." unique_id=804259909 instance=ExtResource("1_nh37l")]
 position = Vector2(-105, 274)
