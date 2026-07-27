@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://de6hl5wvejkoh"]
 
-[ext_resource type="Texture2D" uid="uid://dkc7ge3q35pak" path="res://Art/Art for Levels/spr_tileset_sunnysideworld_16px.png" id="1_l3thc"]
-[ext_resource type="Texture2D" uid="uid://ctd2ii70cun7" path="res://Art/Art for Levels/House.png" id="2_kc7sw"]
+[ext_resource type="Texture2D" uid="uid://dkc7ge3q35pak" path="res://Art/spr_tileset_sunnysideworld_16px.png" id="1_l3thc"]
+[ext_resource type="Texture2D" uid="uid://ctd2ii70cun7" path="res://Art/Art for Levels/Level 1 art/House.png" id="2_kc7sw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l3thc"]
 texture = ExtResource("1_l3thc")

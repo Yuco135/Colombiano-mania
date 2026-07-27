@@ -17,34 +17,38 @@ grow_vertical = 0
 
 [node name="level1" type="Button" parent="level_buttons" unique_id=397110933]
 layout_mode = 0
-offset_left = 490.0
-offset_top = 232.0
-offset_right = 610.0
-offset_bottom = 263.0
+offset_left = 1150.0
+offset_top = 250.0
+offset_right = 1350.0
+offset_bottom = 300.0
+theme_override_font_sizes/font_size = 25
 text = "Level 1: Coffee"
 
 [node name="level2" type="Button" parent="level_buttons" unique_id=1558831836]
 layout_mode = 0
-offset_left = 484.0
-offset_top = 280.0
-offset_right = 617.0
-offset_bottom = 311.0
+offset_left = 1150.0
+offset_top = 500.0
+offset_right = 1353.0
+offset_bottom = 550.0
+theme_override_font_sizes/font_size = 25
 text = "Level 2: Football"
 
 [node name="level3" type="Button" parent="level_buttons" unique_id=753827687]
 layout_mode = 0
-offset_left = 491.0
-offset_top = 328.0
-offset_right = 610.0
-offset_bottom = 359.0
+offset_left = 1150.0
+offset_top = 750.0
+offset_right = 1350.0
+offset_bottom = 800.0
+theme_override_font_sizes/font_size = 25
 text = "Level 3: Dance"
 
 [node name="Back" type="Button" parent="level_buttons" unique_id=2058281464]
 layout_mode = 0
-offset_left = 493.0
-offset_top = 379.0
-offset_right = 607.0
-offset_bottom = 410.0
+offset_left = 1150.0
+offset_top = 1000.0
+offset_right = 1350.0
+offset_bottom = 1050.0
+theme_override_font_sizes/font_size = 25
 text = "Back to Menu
 "
 

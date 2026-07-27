@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bf08h3ydyqs3v"]
 
 [ext_resource type="Script" uid="uid://bs5ynkpxxejwt" path="res://Script/Level Scripts/Level 1 Scripts/lose_screen_lv_1.gd" id="1_f3lqh"]
-[ext_resource type="Texture2D" uid="uid://ciavckhkekj0m" path="res://Art/Art for Levels/coffe beans on fire.jpg" id="2_hb2pq"]
+[ext_resource type="Texture2D" uid="uid://ciavckhkekj0m" path="res://Art/Art for Levels/Level 1 art/coffe beans on fire.jpg" id="2_hb2pq"]
 
 [node name="lose_screen_lv1" type="Control" unique_id=1199872418]
 layout_mode = 3
@@ -26,7 +26,7 @@ offset_bottom = -57.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.48951083, 0.17971236, 0.07098869, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 35
 text = "You lost at the easiest game ever HOW"
 
 [node name="Retry" type="Button" parent="." unique_id=1580587248]
@@ -42,7 +42,7 @@ offset_right = 36.0
 offset_bottom = -1.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 30
 text = "Retry"
 
 [node name="Quit" type="Button" parent="." unique_id=1817010908]
@@ -58,14 +58,14 @@ offset_right = 32.5
 offset_bottom = 59.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 30
 text = "Quit
 "
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1147676113]
 z_index = -1
-position = Vector2(576, 324.5)
-scale = Vector2(0.3, 0.30046296)
+position = Vector2(1348, 749)
+scale = Vector2(0.7, 0.7)
 texture = ExtResource("2_hb2pq")
 
 [connection signal="pressed" from="Retry" to="." method="_on_retry_pressed"]

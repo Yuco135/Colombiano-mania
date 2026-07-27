@@ -1,12 +1,23 @@
 [gd_scene format=3 uid="uid://c5q1q2hin0v2"]
 
 [ext_resource type="PackedScene" uid="uid://clikiuiksavew" path="res://Scenes/Level Scenes/Level 3 Scenes/key_listener.tscn" id="1_nh37l"]
+[ext_resource type="Texture2D" uid="uid://b28wc7f3dmpvp" path="res://Art/Art for Levels/Level 3 Art/upscalemedia-transformed.webp" id="1_s656e"]
 [ext_resource type="PackedScene" uid="uid://dnjjxhq8h0erf" path="res://Scenes/Level Scenes/Level 3 Scenes/level_3ui.tscn" id="2_8qes0"]
+[ext_resource type="PackedScene" uid="uid://dmtvakd2q8c42" path="res://Scenes/Level Scenes/Level 3 Scenes/level_editor.tscn" id="4_s656e"]
+
+[sub_resource type="Environment" id="Environment_gtl5l"]
+background_mode = 3
+glow_enabled = true
 
 [node name="Level 3 Dance" type="Node2D" unique_id=999734280]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1116932174]
 zoom = Vector2(2, 2)
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1743340053]
+position = Vector2(-4.000002, 50)
+scale = Vector2(1.75, 1.644)
+texture = ExtResource("1_s656e")
 
 [node name="KeyListener" parent="." unique_id=804259909 instance=ExtResource("1_nh37l")]
 position = Vector2(-105, 274)
@@ -32,3 +43,10 @@ offset_left = 105.0
 offset_top = 275.0
 offset_right = 105.0
 offset_bottom = 275.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=396788427]
+environment = SubResource("Environment_gtl5l")
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="." unique_id=781318505]
+
+[node name="LevelEditor" parent="." unique_id=859462762 instance=ExtResource("4_s656e")]

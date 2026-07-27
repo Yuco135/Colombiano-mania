@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bhsbfpiq33dkv"]
 
 [ext_resource type="Script" uid="uid://ejjn6l7dlwjv" path="res://Script/Level Scripts/Level 1 Scripts/coffee_item.gd" id="1_8evog"]
-[ext_resource type="Texture2D" uid="uid://dou7a3hcw027l" path="res://Art/Art for Levels/rotatingCoffeeBean-Sheet.png" id="1_466p8"]
+[ext_resource type="Texture2D" uid="uid://dou7a3hcw027l" path="res://Art/Art for Levels/Level 1 art/rotatingCoffeeBean-Sheet.png" id="1_466p8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cfs2h"]
 atlas = ExtResource("1_466p8")

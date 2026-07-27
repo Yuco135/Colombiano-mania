@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cej7uibfur2k5"]
 
 [ext_resource type="Script" uid="uid://chjfi6vn4u0a1" path="res://Script/Level Scripts/Level 1 Scripts/win_screen_lv1.gd" id="1_5bn08"]
-[ext_resource type="Texture2D" uid="uid://d10rfcpvu6x80" path="res://Art/Art for Levels/colombia flag with coffee cup.jpg" id="2_q10qq"]
+[ext_resource type="Texture2D" uid="uid://d10rfcpvu6x80" path="res://Art/Art for Levels/Level 1 art/colombia flag with coffee cup.jpg" id="2_q10qq"]
 
 [node name="Win_Screen" type="Control" unique_id=2078742509]
 layout_mode = 3
@@ -82,10 +82,10 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 25
 text = "Quit"
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1054056163]
+[node name="Background" type="Sprite2D" parent="." unique_id=1054056163]
 z_index = -1
-position = Vector2(579, 319)
-scale = Vector2(1.882353, 1.6)
+position = Vector2(1319, 736.99994)
+scale = Vector2(4.3, 3.655)
 texture = ExtResource("2_q10qq")
 
 [connection signal="pressed" from="Return_to_world" to="." method="_on_return_to_world_pressed"]
