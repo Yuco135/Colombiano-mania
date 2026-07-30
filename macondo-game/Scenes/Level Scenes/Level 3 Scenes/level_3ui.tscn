@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dnjjxhq8h0erf"]
+
+[ext_resource type="Script" uid="uid://d18pbnynmxgki" path="res://macondo-game/Script/Level Scripts/Level 3 Scripts/level_3_ui.gd" id="1_m4f7q"]
+[ext_resource type="FontFile" uid="uid://jyjda4mgdd0l" path="res://macondo-game/Art/Art for Levels/Level 3 Art/Smilen-gKW6.otf" id="2_5on1b"]
+
+[node name="Level3UI" type="Control" unique_id=1503815997]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m4f7q")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1930301635]
+
+[node name="ScoreLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=1086447608]
+unique_name_in_owner = true
+offset_left = 29.0
+offset_top = 20.0
+offset_right = 642.0
+offset_bottom = 148.0
+theme_override_colors/default_color = Color(0.94980854, 0.82771814, 0.3193537, 1)
+theme_override_fonts/normal_font = ExtResource("2_5on1b")
+theme_override_font_sizes/normal_font_size = 100
+text = "0 pts"
+
+[node name="ComboLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=1447765324]
+unique_name_in_owner = true
+offset_left = 1.0
+offset_top = 103.0
+offset_right = 509.0
+offset_bottom = 207.0
+theme_override_colors/default_color = Color(0.9490196, 0.827451, 0.31764707, 1)
+theme_override_fonts/normal_font = ExtResource("2_5on1b")
+theme_override_font_sizes/normal_font_size = 100
+text = "0X COMBO
+"
+
+[node name="Timer" type="Timer" parent="CanvasLayer" unique_id=1554980053]
+
+[connection signal="timeout" from="CanvasLayer/Timer" to="." method="_on_timer_timeout"]

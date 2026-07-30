@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ds2624ncnk8sk"]
+
+[ext_resource type="Script" uid="uid://bdx2vlwx56eq5" path="res://macondo-game/Scenes/Level Scenes/Level 2 Scenes/level_2_football.gd" id="1_wnwbc"]
+
+[node name="Level 2 Football" type="Node2D" unique_id=1427426475]
+script = ExtResource("1_wnwbc")
+
+[node name="Label" type="Label" parent="." unique_id=1527459008]
+offset_left = 871.0
+offset_top = 377.0
+offset_right = 1614.0
+offset_bottom = 419.0
+theme_override_font_sizes/font_size = 30
+text = "I TOLD YOU NOT TO ENTER WHY DIDNT YOU LISTEN"
+
+[node name="Button" type="Button" parent="." unique_id=1082950720]
+offset_left = 1109.0
+offset_top = 448.0
+offset_right = 1394.0
+offset_bottom = 498.0
+theme_override_font_sizes/font_size = 30
+text = "GO BACK TO MENU"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
