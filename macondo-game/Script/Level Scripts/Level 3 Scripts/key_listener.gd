@@ -94,5 +94,5 @@ func CreateFallingKey(button_name: String):
 
 func _on_random_spawn_timer_timeout():
 	#CreateFallingKey()
-	$RandomSpawnTimer.wait_time = randf_range(0.4, 3)
-	$RandomSpawnTimer.start()
+	%Timer.wait_time = randf_range(0.4, 3)
+	%Timer.start()

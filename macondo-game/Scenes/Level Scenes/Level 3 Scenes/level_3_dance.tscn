@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://c5q1q2hin0v2"]
 
+[ext_resource type="Script" uid="uid://b4hgr23dfr2pk" path="res://macondo-game/Scenes/Level Scenes/Level 3 Scenes/level_3_dance.gd" id="1_8oqgt"]
 [ext_resource type="PackedScene" uid="uid://clikiuiksavew" path="res://macondo-game/Scenes/Level Scenes/Level 3 Scenes/key_listener.tscn" id="1_nh37l"]
 [ext_resource type="Texture2D" uid="uid://b28wc7f3dmpvp" path="res://macondo-game/Art/Art for Levels/Level 3 Art/upscalemedia-transformed.webp" id="1_s656e"]
 [ext_resource type="PackedScene" uid="uid://dnjjxhq8h0erf" path="res://macondo-game/Scenes/Level Scenes/Level 3 Scenes/level_3ui.tscn" id="2_8qes0"]
@@ -10,6 +11,7 @@ background_mode = 3
 glow_enabled = true
 
 [node name="Level 3 Dance" type="Node2D" unique_id=999734280]
+script = ExtResource("1_8oqgt")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1116932174]
 zoom = Vector2(2, 2)
@@ -52,6 +54,12 @@ environment = SubResource("Environment_gtl5l")
 [node name="LevelEditor" parent="." unique_id=859462762 instance=ExtResource("4_s656e")]
 
 [node name="Timer" type="Timer" parent="." unique_id=1486133702]
+unique_name_in_owner = true
+autostart = true
+
+[node name="Ending" type="Timer" parent="." unique_id=1640532865]
+unique_name_in_owner = true
 autostart = true
 
 [connection signal="timeout" from="Timer" to="KeyListener" method="_on_timer_timeout"]
+[connection signal="timeout" from="Ending" to="." method="_on_ending_timeout"]

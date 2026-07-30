@@ -35,12 +35,12 @@ text = "Level 2: Football (In development do not enter)"
 
 [node name="level3" type="Button" parent="level_buttons" unique_id=753827687]
 layout_mode = 0
-offset_left = 684.0
+offset_left = 602.0
 offset_top = 752.0
-offset_right = 1953.0
+offset_right = 2051.0
 offset_bottom = 802.0
 theme_override_font_sizes/font_size = 25
-text = "Level 3: Dance (In development functional but doesnt have win or lose screen so must refresh to go back"
+text = "Level 3: Dance (In development functional but doesnt have win or lose screen so when ended it will bring to main menu"
 
 [node name="Back" type="Button" parent="level_buttons" unique_id=2058281464]
 layout_mode = 0
