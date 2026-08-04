@@ -16,16 +16,16 @@ Play a variety of minigames. I don't want to spoil since well gonna be honest th
 
 # Download
 Step 1: Clone Repository 
-Repository-https://github.com/Yuco135/Colombiano-mania
+- Repository-https://github.com/Yuco135/Colombiano-mania
 
 Step 2: Download Files and Godot
-Download the folders and files included in the cloned repository and download Godot 
+- Download the folders and files included in the cloned repository and download Godot 
 
 Step 3: Make a New game and add the files
-Next make a game on godot and add the files 
+- Next make a game on godot and add the files 
 
 Step 4: Do whatever
-Do whatever you want now
+- Do whatever you want now
 
 # Creator
 Made by Nicolas Rozo a colombian. Game made for Macondo hackathon program. 
