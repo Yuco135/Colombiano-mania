@@ -14,7 +14,7 @@ Learn all about Colombia's vibrate culture like:
 # Fun minigames
 Play a variety of minigames. I don't want to spoil since well gonna be honest there are only three im new to coding okay but one of the minigames is playing football and its football not soccer YOU AMERICANS
 
-#Download
+# Download
 Step 1: Clone Repository 
 Repository-https://github.com/Yuco135/Colombiano-mania
 
