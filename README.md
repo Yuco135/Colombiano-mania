@@ -14,5 +14,18 @@ Learn all about Colombia's vibrate culture like:
 # Fun minigames
 Play a variety of minigames. I don't want to spoil since well gonna be honest there are only three im new to coding okay but one of the minigames is playing football and its football not soccer YOU AMERICANS
 
+#Download
+Step 1: Clone Repository 
+Repository-https://github.com/Yuco135/Colombiano-mania
+
+Step 2: Download Files and Godot
+Download the folders and files included in the cloned repository and download Godot 
+
+Step 3: Make a New game and add the files
+Next make a game on godot and add the files 
+
+Step 4: Do whatever
+Do whatever you want now
+
 # Creator
 Made by Nicolas Rozo a colombian. Game made for Macondo hackathon program. 
