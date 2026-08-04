@@ -11,10 +11,12 @@ Learn all about Colombia's vibrate culture like:
 - sports
 - dance/salsa
 
+![dance]([https://github.com/Yuco135/Colombiano-mania/blob/main/Screenshot%202026-07-27%20144111.png?raw=true>](https://github.com/Yuco135/Colombiano-mania/blob/main/Screenshot%202026-07-30%20170038.png?raw=true))
+
 # Fun minigames
 Play a variety of minigames. I don't want to spoil since well gonna be honest there are only three im new to coding okay but one of the minigames is playing football and its football not soccer YOU AMERICANS
 
-![dance](https://github.com/Yuco135/Colombiano-mania/blob/main/Screenshot%202026-07-27%20144111.png?raw=true>)
+![collectiing](https://github.com/Yuco135/Colombiano-mania/blob/main/Screenshot%202026-07-27%20144111.png?raw=true>)
 
 # Download
 Step 1: Clone Repository 
